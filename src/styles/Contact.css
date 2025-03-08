@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--dark-colour);
+  margin-left: 150px;
+  margin-right: 150px;
+  position: relative;
+}
+
+:root {
+  --dark-colour: #171513;
+  --white-color: #FFFFFF;
+}
+
+.sec5 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cnt-sub {
+  color: var(--white-color);
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  word-spacing: 8px;
+  letter-spacing: 12px;
+  margin-top: 15px;
+}
+
+.cnt-title {
+  color: var(--white-color);
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  font-size: 40px;
+  word-spacing: 20px;
+}
+
+.project-cnt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-cnt h1 {
+  color: var(--white-color);
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project-cnt input {
+  margin-bottom: 30px;
+  height: 60px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+textarea {
+  height: 150px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+}
+
+.lets-start {
+  text-align: center;
+  color: var(--white-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 7.5rem;
+  width: 700px;
+  letter-spacing: 15px;
+  background-image: linear-gradient(95deg, #8a2387, #e94057, #f27121);
+  background-clip: text;
+  word-spacing: 10px;
+  color: transparent;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+}
+
+form input, #text-input {
+  border: none;
+  outline: none;
+}
+
+form input:focus {
+  border: solid 3px #e94057;
+}
+
+form #text-input:focus {
+  border: solid 3px #e94057;
+}
+
+@media (max-width: 1024px) {
+  html {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .lets-start {
+    font-size: 5rem;
+    width: 500px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .lets-start {
+    font-size: 4rem;
+    width: 400px;
+    letter-spacing: 5px;
+  }
+
+  .cnt-title {
+    font-size: 30px;
+    word-spacing: 10px;
+  }
+
+  .cnt-sub {
+    font-size: 16px;
+    word-spacing: 5px;
+    letter-spacing: 6px;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-cnt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .lets-start {
+    font-size: 3rem;
+    width: 350px;
+    letter-spacing: 2px;
+  }
+
+  .cnt-title {
+    font-size: 25px;
+    word-spacing: 5px;
+  }
+
+  .cnt-sub {
+    font-size: 14px;
+    word-spacing: 3px;
+    letter-spacing: 4px;
+  }
+
+  .project-cnt input,
+  textarea {
+    font-size: 18px;
+    height: 50px;
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .lets-start {
+    font-size: 2.5rem;
+    width: 300px;
+    letter-spacing: 0px;
+  }
+
+  .project-cnt {
+    width: 100%;
+  }
+
+  form input:focus,
+  form textarea:focus {
+    border: solid 3px #e94057;
+  }
+
+  .cnt-title {
+    font-size: 22px;
+  }
+
+  .cnt-sub {
+    font-size: 12px;
+  }
+}
